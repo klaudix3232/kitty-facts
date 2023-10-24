@@ -1,0 +1,33 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#result {
+    margin: 20px auto;
+    width: 80%;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+}
+
+#apiUrl {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+
+#getDataButton {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#getDataButton:hover {
+    background-color: #0056b3;
+}
+s
