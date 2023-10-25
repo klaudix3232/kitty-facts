@@ -3,20 +3,20 @@
   src: URL('./Urbanist.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'cocon';
+  src: url('./CoconRegularFont.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'productSans';
+  src: url('./ProductSansRegular.ttf') format('truetype');
+  /* font-weight: normal; */
+}
+
 body {
   margin: 0;
-}
-
-@font-face {
-  font-family: cocon;
-  src: url(CoconRegularFont.otf) format ('opentype');
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: product sans;
-  src: url(ProductSansRegular.ttf) format ('truetype');
-  font-weight: normal;
 }
 
 #logo {
@@ -29,12 +29,16 @@ body {
   z-index: -1;
   top: 0;
   max-width: 100vw;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: -100px;
+  display: flex;
+  justify-content: center;
 }
 
 #kitty {
   position: relative;
   width: 694px;
-  /* flex-direction: column; */
   z-index: 1;
   }
 
@@ -46,25 +50,31 @@ body {
   border-radius: 50%;
   width: 593px;
   height: 593px;
+  left: auto;
 }
 
 .fact-box {
-  max-width: 500px;
+  max-width: 550px;
   display: flex;
   flex-direction: column;
+  margin-right: auto;
+  margin-top: 450px;
   margin-left: auto;
-  margin-right: 10vw;
-  margin-top: 400px;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 10px;
 }
 
 #catFact {
   padding: 30px 30px 30px 30px;
-  font-family: product sans;
+  font-family: productSans;
+  font-family: sans-serif;
+  font-weight: 100;
+  color: #454545;
   font-size: 20px;
   line-height: 29px;
   letter-spacing: 0.01em;
   text-align: justify;
-  background-color: rgb(255, 255, 249);
 }
 
  #logo  {
@@ -119,51 +129,3 @@ top: 0px;
 left: 0px;
 background-color: #f8d300;
 }
-
-@media (min-width: 768px) {
-.button-52 {
-  padding: 13px 50px 13px;
-}
-}
-
-
-
-/* Small devices (portrait tablets and large phones, 600px and up)
-@media only screen and (min-width: 600px) {
-#kittyInCircle{position:static;
-  top:0;
-  left:0;}
-#fact-box{
-    position:relative;
-    top:0;
-    left:0;
-  }
-}
-•/
-
-/* Mobile (less than 1000px)  */
-@media only screen and (max-width: 1000px) {
-  #kittyInCircle{
-    left: 50%;
-    transform: translate(-50%);
-    margin-top: -100px;
-    display: flex;
-    justify-content: center;
-  }
-
-  #dot {
-    left: auto;
-  }
-
-  .fact-box {
-    margin-top: 450px;
-    margin-left: auto;
-    backdrop-filter: blur(20px);
-    background-color: rgba(255,255,255,0.3);
-    border-radius: 10px;
-
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up)
-@media only screen and (min-width: 1200px)
