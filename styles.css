@@ -61,7 +61,8 @@ body {
   margin-right: auto;
   margin-top: 450px;
   margin-left: auto;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px); /* Standard syntax */
+  -webkit-backdrop-filter: blur(20px); /* Safari-specific prefix */
   background-color: rgba(255,255,255,0.3);
   border-radius: 10px;
 }
